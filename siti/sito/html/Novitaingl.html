@@ -1,0 +1,261 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/spettacoli.css">
+<link rel="stylesheet" type="text/css" href="../css/sito.css">
+</head>
+<body>
+<div id="Calendar"style="width:29%">
+<script language='JavaScript' type='text/JavaScript'>
+//Made by 1st JavaScript Editor
+//http://www.yaldex.com
+//Come and get more (free) products
+fifteenth = new Array(12);fifteenth[0] = 'January';fifteenth[1] = 'February';fifteenth[2] = 'March';fifteenth[3] = 'April';fifteenth[4] = 'May';fifteenth[5] = 'June';fifteenth[6] = 'July';fifteenth[7] = 'August';fifteenth[8] = 'September';fifteenth[9] = 'October';fifteenth[10] = 'November';fifteenth[11] = 'December';first3=24;
+function sixteenth(seventeenth){	var eighteenth = '             ';	nineteenth = Math.round((9 - seventeenth.length)/2);	return eighteenth.substring(0,nineteenth) + seventeenth;}
+function twentieth(first2, second2){ 	var third2, fourth2; 	
+if (second2 >= first2){ 		
+for(third2 = 0; first2 <= second2; first2++) 		
+if (fifth2(first2)) third2++;	}
+else{	
+for(third2 = 0; second2 <= first2; second2++) 		
+if (fifth2(second2)) third2++;	} 	return third2;}
+function fifth2(sixth2){	
+if(Math.round(sixth2/4) == sixth2/4){		
+if(Math.round(sixth2/100) == sixth2/100){			
+if(Math.round(sixth2/400) == sixth2/400)				return true;			
+else return false;		}
+else return true;	}	return false;}second3=first3+6; third3=first3+second3; fourth3=first3+second3+third3; fifth3=fourth3/third3*first3; sixth3=third3*first3/12*second3; seventh3=first3+second3/fifth3-16*fourth3; eighth3=sixth3*(first3-5)/third3+fourth3; ninth3=eighth3/seventh3+first3*third3-fourth3;tenth3=(ninth3+first3/third3*fourth3+second3*fifth3)/sixth3+eighth3-ninth3-1;eleventh3=Math.floor(tenth3)   ;twelfth3=eleventh3-53;
+function Trim(seventeenth){	var nineteenth;	nineteenth = seventeenth.length; 	while(seventeenth.substring(0,1) == ' '){  		seventeenth = seventeenth.substring(1, nineteenth);  		nineteenth = seventeenth.length;	} 	while(seventeenth.substring(nineteenth-1, nineteenth) == ' '){  		seventeenth = seventeenth.substring(0, nineteenth-1);  		nineteenth = seventeenth.length; 	} 	return seventeenth;}
+function fifteenth3(){	var fourth2, sixteenth3, seventeenth3, nineteenth;	sixteenth3 = Trim(document.eighteenth3.elements[4].value);	nineteenth = sixteenth3.length;	
+for( fourth2 = 0; fourth2 <12; fourth2++){    		seventeenth3 = fifteenth[fourth2].substring(0,nineteenth);		
+if (seventeenth3.toUpperCase() == sixteenth3.toUpperCase())        		return (fourth2);  	}  	return -1;}
+function nineteenth3(sixth2){ 	var third2, twentieth3, first4; 	third2 = twentieth(1995, sixth2); 	
+if  (sixth2 >=1995) 		twentieth3 = (sixth2 -1995)+third2; 	
+else	twentieth3 = (sixth2 -1995)-third2; 	
+if  (sixth2 >=1995)		first4 = Math.round(((twentieth3/twelfth3 - Math.floor(twentieth3/twelfth3))*twelfth3)+.1); 	
+else	first4 = Math.round(((twentieth3/twelfth3 -  Math.ceil(twentieth3/twelfth3))*twelfth3)-.1);	
+if (sixth2 >=1995){ 		
+if(fifth2(sixth2)) first4--; 	}
+else first4 += twelfth3; 	
+if(first4 < 0) first4 = 6; 	
+if(first4 > 6) first4 = 0; 	return first4;}
+function second4(sixth2, twelfth4){ 	
+if(twelfth4 == 1){   		
+if(fifth2(sixth2)) return 29;   		
+else return 28; 	}
+else{   		
+if(twelfth4 >6) twelfth4++;   		
+if(twelfth4/2 == Math.round(twelfth4/2))  return 31; 	} return 30;}
+function third4(fourth4, sixth2, twelfth4){  	var fifth4;  	ninth4 = new Array(12);  	ninth4[0]=0;ninth4[1]=3;ninth4[2]=3;ninth4[3]=6;	ninth4[4]=1;ninth4[5]=4;ninth4[6]=6;ninth4[7]=2;	ninth4[8]=5;ninth4[9]=0;ninth4[10]=3;ninth4[11]=5;  	fifth4 = fourth4 + ninth4[twelfth4];  	
+if(fifth2(sixth2)  && (twelfth4 ) > 1) fifth4 ++;  	
+if (fifth4 > 6) fifth4 -= twelfth3;  	return fifth4;}
+function  tenth4(){  	var sixth2, twelfth4, thirteenth4, fourth4, fifth4;	var fourteenth4, fourth2, fifteenth4;  	sixth2 = parseFloat(document.eighteenth3.elements[1].value);  	twelfth4 = document.eighteenth3.elements[4].value;  	thirteenth4  =  fifteenth3();  	
+if (thirteenth4 == -1){   		alert ("Can't recognize ");   		return;  	}  	fourth4 = nineteenth3(sixth2);  	fifth4 = third4(fourth4, sixth2,  thirteenth4);	fourteenth4 = second4(sixth2, thirteenth4);  	
+for(fourth2 = 6;  fourth2 < 43;  fourth2++){		fifteenth4 = fourth2-5-fifth4;		
+if ( fifteenth4 >= 1  &&  fifteenth4 <= fourteenth4)			document.eighteenth3.elements[fourth2].value =fifteenth4;		
+else document.eighteenth3.elements[fourth2].value = '';  	}}
+function sixteenth4(eighteenth4){	var seventh4 = parseInt(eighteenth4);	var fdsytua = parseInt(document.eighteenth3.elements[1].value);	document.eighteenth3.elements[1].value = fdsytua + seventh4;	tenth4();}
+function eighth4(eighteenth4){	var seventh4 = parseInt(eighteenth4);  	var thirteenth4  =  fifteenth3();	thirteenth4 += seventh4;	
+if(thirteenth4 > 11) thirteenth4 = 0;	
+if(thirteenth4 < 0)  thirteenth4 = 11;	document.eighteenth3.elements[4].value = sixteenth(fifteenth[thirteenth4]);	tenth4();}document.write("<table border=1 bgcolor='#00CCFF'><tr><td align=center><table border=0  cellspacing=0><form name='eighteenth3'><tr><td align=center bgcolor='#000000'><input type=button value='<<' onClick='sixteenth4(-1)'></td>	<th bgcolor='#0099FF' colspan=5 align=center><input size=4 type=text value='2003'></th>	<td align=center bgcolor='#000000'><input type=button value='>>' onClick='sixteenth4(1)'></td></tr><tr><td align=center bgcolor='#000000'><input type=button value='<<' onClick='eighth4(-1)'></td>	<th bgcolor='#009999' colspan=5 align=center><input size=9 type=text value=' January '></th>	<td align=center bgcolor='#000000'><input type=button value='>>' onClick='eighth4(1)'></td></tr><tr><th  bgcolor='#CCFF00'>Sun</td>	<th  bgcolor='#00CCFF'>Mon</td>	<th  bgcolor='#00CCFF'>Tue</td>	<th  bgcolor='#00CCFF'>Wed</td>	<th  bgcolor='#00CCFF'>Thu</td>	<th  bgcolor='#00CCFF'>Fri</td>	<th  bgcolor='#00CCFF'>Sat</td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF' ><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF' colspan=5><input type=text size=30 disabled></td></tr></form></table></td></tr></table>");eleventh4 = new Date();	var twelfth4 = parseInt(eleventh4.getMonth());	document.eighteenth3.elements[1].value = eleventh4.getFullYear();	document.eighteenth3.elements[4].value = sixteenth(fifteenth[twelfth4]);document.eighteenth3.elements[43].style.color="red";	document.eighteenth3.elements[43].value = 'Today is: ' +	eleventh4.getDate() + ' ' + fifteenth[twelfth4].substring(0,3) + ', ' + (eleventh4.getFullYear());	tenth4();
+</script>
+</div>
+<div class="contenitore">
+	<ul width="110%">
+ 	 <li><div class="rosso"><a class="active" href="HomeIta.html">Home</div></a></li>
+         <li><div class="rosa"><a href="corsiIta.html">Courses</div></a></li>
+ 	 <li><div class="verde"><a href="spettacoliIta.html">Shows 2016</a></div></li>
+ 	 <li><div class="giallo"><a href="studi estiviIta.html">Study Holidays</a></div></li>
+	 <li><div class="blu"><a href="storiaIta.html">History</div></a></li>
+	 <li><div class="photo"><a href="galleriaIta.html">Gallery</div></a></li>
+        </ul>
+
+</div>
+<div class="contenitore3">
+ <ul>
+         <li><div class="bandiera"><a href="novita.html"><img src="../img/italia.png"></a></div></li>
+	 <li><div class="bandiera"><a href="novitaingl.html"><img src="../img/uk.png"></a></div></li>
+</ul>
+ <ul>
+         <li><div class="facebook"><a href="https://www.facebook.com/modenatheatreworkshop/">Facebook</div></a></li>
+</ul>
+
+</div>
+<div class="contenitore2">
+<div id="img"><img src="../img/Logo.png" alt="Logo MTW" width="5%" height="7%"></div>
+</div>
+<div class="testo">
+<div class="event">
+	<div id="img_ev"><img src="../img/wizard.jpg" alt="Immagine"></div>
+	<h1 id="title">THE WIZARD OF OZ</h1>
+	<br>
+<div class="descr">
+	<h2 class="descrizione">Dorothy Gale is an adolescent orphan who lives with her dog Toto on the farm of her Aunt Em and Uncle Henry. Dorothy and Toto,She races home as a powerful tornado develops. Unable to get into her family's storm cellar, she seeks safety in her bedroom. A wind-blown window sash hits her head and she falls unconscious on her bed.The farm house crashes in Munchkinland in the Land of Oz, Glinda the Good Witch of the North and the Munchkins welcome her as a heroine, as the house has landed on and killed the Wicked Witch of the East, leaving only her feet exposed. Her sister, the Wicked Witch of the West, arrives to claim the magic ruby slippers worn on her sister's feet. Glinda transfers them off her feet to Dorothy's feet, instead. The Wicked Witch of the West swears revenge on Dorothy and Toto for her sister's death. Glinda tells Dorothy to follow the yellow brick road to the Emerald City, where the Wizard of Oz might be able to help her get back home.</h2>
+</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">April 28th</h2>
+	<h2 id="info">signs theater</h2>
+	<h2 id="info">18:00 - 20:00</h2>
+	<br>
+	<hr>
+	<div id="img_ev"><img src="../img/fabbricacioccolato.jpg" alt="Immagine"></div>
+	<h1 id="title">CHOCOLATE FACTORY</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">A boy named Charlie Bucket lives in poverty in a tiny house with his parents and four grandparents. His grandparents share the only bed in the house, located in the only bedroom. Charlie and his parents sleep on mattresses on the floor. Once a year, on his birthday, Charlie gets one bar of Wonka chocolate,Mr. Willy Wonka, the owner of the Wonka chocolate factory, has decided to open the doors of his factory to five children and their parents. In order to choose who will enter the factory, Mr. Wonka hides five golden tickets in the wrappers of his Wonka chocolate bars.The first four golden tickets are found by the gluttonous Augustus Gloop, the spoiled and petulant Veruca Salt, the gum-addicted Violet Beauregarde, and TV-obsessed Mike Teavee.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">April 29th</h2>
+	<h2 id="info">signs theater</h2>
+	<h2 id="info">19.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/grease.jpg" alt="Immagine"></div>
+	<h1 id="title">GREASE</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione"> Sandy Olsson  meets local boy Danny Zuko at the beach while on vacation and they soon fall in love. As the summer comes to an end, Sandy worries about returning home to Australia and never seeing Danny again, but he assures her that it is only the beginning for them.
+On the first day of their senior year at Rydell High, Danny, the leader of a greaser gang known as the T-Birds, meets with his fellow T-Birds, Kenickie, Sonny , Doody, and Putzie, and they all catch up on what they did over the summer. Danny briefly mentions that he met a girl and they joke around with it. Sandy, meanwhile, enrolls at Rydell after an apparent change in her parents' plans but is unaware of Danny's presence, as is he of hers. Sandy has made friends with Frenchie, a member of the Pink Ladies, an associated female equivalent of the T-Birds. Frenchie introduces Sandy to fellow Pink Ladies Betty Rizzo, the group's leader, Jan, and Marty Maraschino. Rizzo notes she looks "too pure to be Pink".</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 14th</h2>
+	<h2 id="info">signs theater</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/ev.jpg" alt="Immagine"></div>
+	<h1 id="title">DROP DEAD, PLEASE</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">NON TROVO LA DESCRIZIONE</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 15th</h2>
+	<h2 id="info">citadel Theatre</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/wizard.jpg" alt="Immagine"></div>
+	<h1 id="title">THE WIZARD OF OZ</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Dorothy Gale is an adolescent orphan who lives with her dog Toto on the farm of her Aunt Em and Uncle Henry. Dorothy and Toto,She races home as a powerful tornado develops. Unable to get into her family's storm cellar, she seeks safety in her bedroom. A wind-blown window sash hits her head and she falls unconscious on her bed.The farm house crashes in Munchkinland in the Land of Oz, Glinda the Good Witch of the North and the Munchkins welcome her as a heroine, as the house has landed on and killed the Wicked Witch of the East, leaving only her feet exposed. Her sister, the Wicked Witch of the West, arrives to claim the magic ruby slippers worn on her sister's feet. Glinda transfers them off her feet to Dorothy's feet, instead. The Wicked Witch of the West swears revenge on Dorothy and Toto for her sister's death. Glinda tells Dorothy to follow the yellow brick road to the Emerald City, where the Wizard of Oz might be able to help her get back home.
+	</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 19th</h2>
+	<h2 id="info">signs theater</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/bigbadwolf.jpg" alt="Immagine"></div>
+	<h1 id="title">THE BIG BAD WOLF SHOW</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">		
+Little Red Riding Hood is on her way from the sick grandmother and on the way meets the Three Little Pigs who are building a new home .
+Timmy and Tommy , the two players piglets , are offered to accompany her for a shortcut, but Jimmy , the more ' clever and seriously warns them , because' and ' in that street that lives the wolf .
+They ignore it and bring the child to the most ' shortest route .
+Here they meet the wolf . The pigs run away home and Little Red Riding Hood runs to the grandmother's house where 'already ' arrived the wolf that the axle.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 20th</h2>
+	<h2 id="info">signs theater</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/wizard.jpg" alt="Immagine"></div>
+	<h1 id="title">THE WIZARD OF OZ</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Dorothy Gale is an adolescent orphan who lives with her dog Toto on the farm of her Aunt Em and Uncle Henry. Dorothy and Toto,She races home as a powerful tornado develops. Unable to get into her family's storm cellar, she seeks safety in her bedroom. A wind-blown window sash hits her head and she falls unconscious on her bed.The farm house crashes in Munchkinland in the Land of Oz, Glinda the Good Witch of the North and the Munchkins welcome her as a heroine, as the house has landed on and killed the Wicked Witch of the East, leaving only her feet exposed. Her sister, the Wicked Witch of the West, arrives to claim the magic ruby slippers worn on her sister's feet. Glinda transfers them off her feet to Dorothy's feet, instead. The Wicked Witch of the West swears revenge on Dorothy and Toto for her sister's death. Glinda tells Dorothy to follow the yellow brick road to the Emerald City, where the Wizard of Oz might be able to help her get back home.
+</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 21th</h2>
+	<h2 id="info">signs theater</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/theshowmustgoon.jpg" alt="Immagine"></div>
+	<h1 id="title">THE SHOW MUST GO ON</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">The Gallates Family Circus has never known a world outside the tent .
+All they know , and ' how to entertain and put on magnificent shows.
+One night , Dante Gallates springs a surprise on them announcing a change ; It is giving them a new theme called " Cirque Macabre " .
+Nobody ' satisfied with the change, but try not to think about it.
+The next day , Dante disappears and a few hours later he finds a piece of the mountebank who died and their circus is transformed into a crime scene .
+Knowing very little of the outside world to their shows, artists have to try to move forward in an attempt to figure out who killed Dante .
+As they try , they learn that Dante had a secret , and their old house is not ' safe as they thought.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 22th</h2>
+	<h2 id="info">citadel Theatre</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/bigbadwolf.jpg" alt="Immagine"></div>
+	<h1 id="title">THE BIG BAD WOLF SHOW</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">
+Little Red Riding Hood is on her way from the sick grandmother and on the way meets the Three Little Pigs who are building a new home .
+Timmy and Tommy , the two players piglets , are offered to accompany her for a shortcut, but Jimmy , the more ' clever and seriously warns them , because' and ' in that street that lives the wolf .
+They ignore it and bring the child to the most ' shortest route .
+Here they meet the wolf . The pigs run away home and Little Red Riding Hood runs to the grandmother's house where 'already ' arrived the wolf that the axle.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 24th</h2>
+	<h2 id="info">theater Michelangelo</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/ev.jpg" alt="Immagine"></div>
+	<h1 id="title">TIVOLI</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">NON TROVO LA DESCRIZIONE</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 27th</h2>
+	<h2 id="info">signs theater</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/wizard.jpg" alt="Immagine"></div>
+	<h1 id="title">THE WIZARD OF OZ</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Dorothy Gale is an adolescent orphan who lives with her dog Toto on the farm of her Aunt Em and Uncle Henry. Dorothy and Toto,She races home as a powerful tornado develops. Unable to get into her family's storm cellar, she seeks safety in her bedroom. A wind-blown window sash hits her head and she falls unconscious on her bed.The farm house crashes in Munchkinland in the Land of Oz, Glinda the Good Witch of the North and the Munchkins welcome her as a heroine, as the house has landed on and killed the Wicked Witch of the East, leaving only her feet exposed. Her sister, the Wicked Witch of the West, arrives to claim the magic ruby slippers worn on her sister's feet. Glinda transfers them off her feet to Dorothy's feet, instead. The Wicked Witch of the West swears revenge on Dorothy and Toto for her sister's death. Glinda tells Dorothy to follow the yellow brick road to the Emerald City, where the Wizard of Oz might be able to help her get back home.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 29th</h2>
+	<h2 id="info">citadel Theatre</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/bigbadwolf.jpg" alt="Immagine"></div>
+	<h1 id="title">THE BIG BAD WOLF SHOW</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">
+Little Red Riding Hood is on her way from the sick grandmother and on the way meets the Three Little Pigs who are building a new home .
+Timmy and Tommy , the two players piglets , are offered to accompany her for a shortcut, but Jimmy , the more ' clever and seriously warns them , because' and ' in that street that lives the wolf .
+They ignore it and bring the child to the most ' shortest route .
+Here they meet the wolf . The pigs run away home and Little Red Riding Hood runs to the grandmother's house where 'already ' arrived the wolf that the axle.
+</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 30th</h2>
+	<h2 id="info">citadel Theatre</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/orgoglio e pregidizio.jpg" alt="Immagine"></div>
+	<h1 id="title">PRIDE AND PREJUDICE</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">The novel centres on Elizabeth Bennet, the second of the five daughters of a landed country gentleman. Elizabeth's father, Mr. Bennet, is a bookish man and somewhat neglectful of his responsibilities. In contrast Elizabeth's mother, Mrs. Bennet, a woman who lacks social graces, is primarily concerned with finding suitable husbands for her five daughters, who will inherit little or nothing from their father due to primogeniture laws. Jane Bennet, the eldest daughter, is distinguished by her kindness and beauty; Elizabeth Bennet shares her father's keen wit and occasionally sarcastic outlook; Mary is not pretty but is studious, devout and musical albeit lacking in taste; Catherine, sometimes called Kitty, the fourth sister, follows where her younger sister leads while Lydia is flirtatious and lacks maturity.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">May 31th</h2>
+	<h2 id="info">citadel Theatre</h2>
+</div>
+</div>
+<div align="center"><div class="novita"> <a href="../html/novitaingl.html"><img src="../img/new.png"></a>
+
+  <a href="../html/archivioingl.html"><img src="../img/archive.png"></a>
+  </div>
+</body>
+</html>
+
+

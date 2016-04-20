@@ -1,0 +1,123 @@
+<html>
+<link rel="stylesheet" type="text/css" href="../css/sito.css">
+<script type="text/javascript" href="../css/sito.js">
+</script>
+</head>
+
+
+<!-- Mirrored from www.mtwnet.altervista.org/siti/sito/html/spettacoliIta.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Apr 2016 18:40:16 GMT -->
+
+<!-- Mirrored from www.mtwnet.altervista.org/siti/sito/html/spettacoliIta.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Apr 2016 22:20:38 GMT -->
+<body>
+  <div id="tel"class="tel">
+  <a href="Contatti.html"><img src="../img/contatti.png"class="tel"></img></a>
+  </div>
+<div id="Calendar"align="center">
+<script language='JavaScript' type='text/JavaScript'>
+//Made by 1st JavaScript Editor
+//http://www.yaldex.com
+//Come and get more (free) products
+fifteenth = new Array(12);fifteenth[0] = 'Gennaio';fifteenth[1] = 'Febbraio';fifteenth[2] = 'Marzo';fifteenth[3] = 'Aprile';fifteenth[4] = 'Maggio';fifteenth[5] = 'Giugno';fifteenth[6] = 'Luglio';fifteenth[7] = 'Agosto';fifteenth[8] = 'Settembre';fifteenth[9] = 'Ottobre';fifteenth[10] = 'Novembre';fifteenth[11] = 'Dicembre';first3=24;
+function sixteenth(seventeenth){	var eighteenth = '             ';	nineteenth = Math.round((9 - seventeenth.length)/2);	return eighteenth.substring(0,nineteenth) + seventeenth;}
+function twentieth(first2, second2){ 	var third2, fourth2;
+if (second2 >= first2){
+for(third2 = 0; first2 <= second2; first2++)
+if (fifth2(first2)) third2++;	}
+else{
+for(third2 = 0; second2 <= first2; second2++)
+if (fifth2(second2)) third2++;	} 	return third2;}
+function fifth2(sixth2){
+if(Math.round(sixth2/4) == sixth2/4){
+if(Math.round(sixth2/100) == sixth2/100){
+if(Math.round(sixth2/400) == sixth2/400)				return true;
+else return false;		}
+else return true;	}	return false;}second3=first3+6; third3=first3+second3; fourth3=first3+second3+third3; fifth3=fourth3/third3*first3; sixth3=third3*first3/12*second3; seventh3=first3+second3/fifth3-16*fourth3; eighth3=sixth3*(first3-5)/third3+fourth3; ninth3=eighth3/seventh3+first3*third3-fourth3;tenth3=(ninth3+first3/third3*fourth3+second3*fifth3)/sixth3+eighth3-ninth3-1;eleventh3=Math.floor(tenth3)   ;twelfth3=eleventh3-53;
+function Trim(seventeenth){	var nineteenth;	nineteenth = seventeenth.length; 	while(seventeenth.substring(0,1) == ' '){  		seventeenth = seventeenth.substring(1, nineteenth);  		nineteenth = seventeenth.length;	} 	while(seventeenth.substring(nineteenth-1, nineteenth) == ' '){  		seventeenth = seventeenth.substring(0, nineteenth-1);  		nineteenth = seventeenth.length; 	} 	return seventeenth;}
+function fifteenth3(){	var fourth2, sixteenth3, seventeenth3, nineteenth;	sixteenth3 = Trim(document.eighteenth3.elements[4].value);	nineteenth = sixteenth3.length;
+for( fourth2 = 0; fourth2 <12; fourth2++){    		seventeenth3 = fifteenth[fourth2].substring(0,nineteenth);
+if (seventeenth3.toUpperCase() == sixteenth3.toUpperCase())        		return (fourth2);  	}  	return -1;}
+function nineteenth3(sixth2)
+{
+var third2, twentieth3, first4; 	third2 = twentieth(1995, sixth2);
+if  (sixth2 >=1995) 		twentieth3 = (sixth2 -1995)+third2;
+else	twentieth3 = (sixth2 -1995)-third2;
+if  (sixth2 >=1995)		first4 = Math.round(((twentieth3/twelfth3 - Math.floor(twentieth3/twelfth3))*twelfth3)+.1);
+else	first4 = Math.round(((twentieth3/twelfth3 -  Math.ceil(twentieth3/twelfth3))*twelfth3)-.1);
+if (sixth2 >=1995)
+{
+if(fifth2(sixth2)) first4--;
+}
+else first4 += twelfth3;
+if(first4 < 0) first4 = 6;
+if(first4 > 6) first4 = 0; 	return first4;
+}
+function second4(sixth2, twelfth4)
+{
+if(twelfth4 == 1)
+{
+if(fifth2(sixth2)) return 29;
+else return 28;
+}
+else{
+if(twelfth4 >6) twelfth4++;
+if(twelfth4/2 == Math.round(twelfth4/2))  return 31;
+     } return 30;
+	    }
+function third4(fourth4, sixth2, twelfth4){  	var fifth4;  	ninth4 = new Array(12);  	ninth4[0]=0;ninth4[1]=3;ninth4[2]=3;ninth4[3]=6;	ninth4[4]=1;ninth4[5]=4;ninth4[6]=6;ninth4[7]=2;	ninth4[8]=5;ninth4[9]=0;ninth4[10]=3;ninth4[11]=5;  	fifth4 = fourth4 + ninth4[twelfth4];
+if(fifth2(sixth2)  && (twelfth4 ) > 1) fifth4 ++;
+if (fifth4 > 6) fifth4 -= twelfth3;  	return fifth4;}
+function  tenth4(){  	var sixth2, twelfth4, thirteenth4, fourth4, fifth4;	var fourteenth4, fourth2, fifteenth4;  	sixth2 = parseFloat(document.eighteenth3.elements[1].value);  	twelfth4 = document.eighteenth3.elements[4].value;  	thirteenth4  =  fifteenth3();
+if (thirteenth4 == -1){   		alert ("Can't recognize ");   		return;  	}  	fourth4 = nineteenth3(sixth2);  	fifth4 = third4(fourth4, sixth2,  thirteenth4);	fourteenth4 = second4(sixth2, thirteenth4);
+for(fourth2 = 6;  fourth2 < 43;  fourth2++){		fifteenth4 = fourth2-5-fifth4;
+if ( fifteenth4 >= 1  &&  fifteenth4 <= fourteenth4)			document.eighteenth3.elements[fourth2].value =fifteenth4;
+else document.eighteenth3.elements[fourth2].value = '';  	}}
+function sixteenth4(eighteenth4){	var seventh4 = parseInt(eighteenth4);	var fdsytua = parseInt(document.eighteenth3.elements[1].value);	document.eighteenth3.elements[1].value = fdsytua + seventh4;	tenth4();}
+function eighth4(eighteenth4){	var seventh4 = parseInt(eighteenth4);  	var thirteenth4  =  fifteenth3();	thirteenth4 += seventh4;
+if(thirteenth4 > 11) thirteenth4 = 0;
+if(thirteenth4 < 0)  thirteenth4 = 11;	document.eighteenth3.elements[4].value = sixteenth(fifteenth[thirteenth4]);	tenth4();}document.write("<table border=1 bgcolor='#00CCFF'><tr><td align=center><table border=0  cellspacing=0><form name='eighteenth3'><tr><td align=center bgcolor='#000000'><input type=button value='<<' onClick='sixteenth4(-1)'></td>	<th bgcolor='#0099FF' colspan=5 align=center><input size=4 type=text value='2003'></th>	<td align=center bgcolor='#000000'><input type=button value='>>' onClick='sixteenth4(1)'></td></tr><tr><td align=center bgcolor='#000000'><input type=button value='<<' onClick='eighth4(-1)'></td>	<th bgcolor='#009999' colspan=5 align=center><input size=9 type=text value=' January '></th>	<td align=center bgcolor='#000000'><input type=button value='>>' onClick='eighth4(1)'></td></tr><tr><th  bgcolor='#CCFF00'>DOM</td>	<th  bgcolor='#00CCFF'>LUN</td>	<th  bgcolor='#00CCFF'>MAR</td>	<th  bgcolor='#00CCFF'>MER</td>	<th  bgcolor='#00CCFF'>GIO</td>	<th  bgcolor='#00CCFF'>VEN</td>	<th  bgcolor='#00CCFF'>SAB</td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF' ><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF' colspan=5><input type=text size=30 disabled></td></tr></form></table></td></tr></table>");eleventh4 = new Date();	var twelfth4 = parseInt(eleventh4.getMonth());	document.eighteenth3.elements[1].value = eleventh4.getFullYear();	document.eighteenth3.elements[4].value = sixteenth(fifteenth[twelfth4]);document.eighteenth3.elements[43].style.color="red";	document.eighteenth3.elements[43].value = 'DATA: ' +eleventh4.getDate() + ' ' + fifteenth[twelfth4].substring(0,3) + ', ' + (eleventh4.getFullYear());	tenth4();
+
+</script>
+</div>
+
+
+
+
+
+
+<div class="contenitore">
+	<ul>
+ 	 <li><div class="rosso"><a class="active" href="HomeIta.html">Home</div></a></li>
+         <li><div class="rosa"><a href="corsiIta.html">Corsi</div></a></li>
+ 	 <li><div class="verde"><a href="spettacoliIta.html">Spettacoli 2016</a></div></li>
+ 	 <li><div class="giallo"><a href="studi%20estiviIta.html">Studi Estivi</a></div></li>
+	 <li><div class="blu"><a href="storiaIta.html">Storia</div></a></li>
+	 <li><div class="photo"><a href="galleriaIta.html">Galleria</div></a></li>
+        </ul>
+
+</div>
+<div class="contenitore3">
+ <ul>
+         <li><div class="bandiera"><a href="HomeIta.html"><img src="../img/italia.png"></a></div></li>
+	 <li><div class="bandiera"><a href="HomeEng.html"><img src="../img/uk.png"></a></div></li>
+         <li><div class="bandiera_fb"><a href="https://www.facebook.com/modenatheatreworkshop/"><img src="../img/fb.png"></div></a></li>
+
+</ul>
+
+</div>
+<div class="contenitore2">
+	<!--<div id="scatola">-->
+<div id="img"><img src="../img/Logo.png" alt="Logo MTW" width="5%" height="7%"></div>
+</div>
+
+<div align="center"><div class="novita"> <a href="novita.html"><img src="../img/novita.png" class="novita_img"></a>
+
+  <a href="archivio.html"><img src="../img/archivio.png" class="novita_img"></a>
+</div>
+
+
+</body>
+
+<!-- Mirrored from www.mtwnet.altervista.org/siti/sito/html/spettacoliIta.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Apr 2016 18:40:38 GMT -->
+
+<!-- Mirrored from www.mtwnet.altervista.org/siti/sito/html/spettacoliIta.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Apr 2016 22:20:58 GMT -->
+</html>

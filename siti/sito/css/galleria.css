@@ -1,0 +1,148 @@
+
+
+*
+{
+  z-index: 1;
+}
+#galleria
+{
+
+	margin-top:-1%;
+  z-index: 0;
+     background-image:url("../img/texture.jpg");
+	height:250%;
+	padding:1%;
+
+
+}
+#slave_gallery
+{
+
+  list-style: none;
+  width: auto;
+  height: auto;
+  margin-top:3%;
+  background-color: rgba(0, 0, 0, 0);
+
+}
+#slave_gallery li:nth-child(1n+0)
+{
+position: absolute;
+margin-left: 10%;
+height: 27%;
+width: 18%;
+margin-bottom: 3%;
+/*transition: transform 2s, width 2s, height 2s;*/
+transition: transform 0.7s, width 0.4s, height 0.4s;
+  z-index: 0;
+}
+#slave_gallery li:nth-child(2n+0)
+{
+position: absolute;
+margin-left: 38%;
+height: 27%;
+width: 18%;
+margin-bottom: 3%;
+/*transition: transform 2s, width 2s, height 2s;*/
+transition: transform 0.7s, width 0.4s, height 0.4s;
+
+}
+#slave_gallery li:nth-child(3n+0)
+{
+position: absolute;
+margin-left: 66%;
+height: 27%;
+width: 18%;
+margin-bottom: 3%;
+/*transition: transform 2s, width 2s, height 2s;*/
+transition: transform 0.7s, width 0.4s, height 0.4s;
+z-index: 0;
+}
+#slave_gallery li:nth-child(n+4)
+{
+  margin-top: 25%;
+}
+#slave_gallery li:nth-child(n+7)
+{
+  margin-top: 50%;
+}
+#slave_gallery li:nth-child(n+10)
+{
+  margin-top: 75%;
+}
+#slave_gallery li:nth-child(n+13)
+{
+  margin-top: 100%;
+}
+#slave_gallery li:nth-child(n+16)
+{
+  margin-top: 125%;
+}
+#bordo
+{
+  background-color: white;
+  height: 100%;
+}
+
+#slave_gallery li:nth-child(even)
+{
+  transform: rotate(-3deg);
+}
+#slave_gallery li:nth-child(odd)
+{
+  transform: rotate(1.5deg);
+}
+#slave_gallery li:nth-child(5n)
+{
+  transform: rotate(-3deg);
+}
+
+#slave_gallery li:nth-child(3n)
+{
+  transform: rotate(1.5deg);
+}
+#slave_gallery li:nth-child(7n+2)
+{
+  transform: rotate(1.1deg);
+}
+#slave_gallery li:nth-child(6n+2)
+{
+  transform: rotate(-1.3deg);
+}
+#slave_gallery li:hover
+{
+  transform: none;
+  height: 32.4%;
+  width: 21.6%;
+z-index: 1;
+}
+#immagine
+{
+  margin: 4%;
+
+
+}
+#immagine  img
+{
+  width: auto;
+  max-width: 90%;
+  height: 50%;
+  margin: 4%;
+margin-left: 5%;
+  background-position: center;
+  background-size: cover;
+}
+#com
+{
+    text-align: center;
+}
+#puntina
+{
+transform:none;
+height:40px;
+width:auto;
+margin-left:40%;
+position:absolute;
+margin-top:-50%;
+z-index:100;
+}

@@ -1,0 +1,288 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/spettacoli.css">
+<link rel="stylesheet" type="text/css" href="../css/sito.css">
+</head>
+
+<body>
+<div id="Calendar"style="width:29%">
+<script language='JavaScript' type='text/JavaScript'>
+//Made by 1st JavaScript Editor
+//http://www.yaldex.com
+//Come and get more (free) products
+fifteenth = new Array(12);fifteenth[0] = 'Gennaio';fifteenth[1] = 'Febbraio';fifteenth[2] = 'Marzo';fifteenth[3] = 'Aprile';fifteenth[4] = 'Maggio';fifteenth[5] = 'Giugno';fifteenth[6] = 'Luglio';fifteenth[7] = 'Agosto';fifteenth[8] = 'Settembre';fifteenth[9] = 'Ottobre';fifteenth[10] = 'Novembre';fifteenth[11] = 'Dicembre';first3=24;
+function sixteenth(seventeenth){	var eighteenth = '             ';	nineteenth = Math.round((9 - seventeenth.length)/2);	return eighteenth.substring(0,nineteenth) + seventeenth;}
+function twentieth(first2, second2){ 	var third2, fourth2;
+if (second2 >= first2){
+for(third2 = 0; first2 <= second2; first2++)
+if (fifth2(first2)) third2++;	}
+else{
+for(third2 = 0; second2 <= first2; second2++)
+if (fifth2(second2)) third2++;	} 	return third2;}
+function fifth2(sixth2){
+if(Math.round(sixth2/4) == sixth2/4){
+if(Math.round(sixth2/100) == sixth2/100){
+if(Math.round(sixth2/400) == sixth2/400)				return true;
+else return false;		}
+else return true;	}	return false;}second3=first3+6; third3=first3+second3; fourth3=first3+second3+third3; fifth3=fourth3/third3*first3; sixth3=third3*first3/12*second3; seventh3=first3+second3/fifth3-16*fourth3; eighth3=sixth3*(first3-5)/third3+fourth3; ninth3=eighth3/seventh3+first3*third3-fourth3;tenth3=(ninth3+first3/third3*fourth3+second3*fifth3)/sixth3+eighth3-ninth3-1;eleventh3=Math.floor(tenth3)   ;twelfth3=eleventh3-53;
+function Trim(seventeenth){	var nineteenth;	nineteenth = seventeenth.length; 	while(seventeenth.substring(0,1) == ' '){  		seventeenth = seventeenth.substring(1, nineteenth);  		nineteenth = seventeenth.length;	} 	while(seventeenth.substring(nineteenth-1, nineteenth) == ' '){  		seventeenth = seventeenth.substring(0, nineteenth-1);  		nineteenth = seventeenth.length; 	} 	return seventeenth;}
+function fifteenth3(){	var fourth2, sixteenth3, seventeenth3, nineteenth;	sixteenth3 = Trim(document.eighteenth3.elements[4].value);	nineteenth = sixteenth3.length;
+for( fourth2 = 0; fourth2 <12; fourth2++){    		seventeenth3 = fifteenth[fourth2].substring(0,nineteenth);
+if (seventeenth3.toUpperCase() == sixteenth3.toUpperCase())        		return (fourth2);  	}  	return -1;}
+function nineteenth3(sixth2)
+{
+var third2, twentieth3, first4; 	third2 = twentieth(1995, sixth2);
+if  (sixth2 >=1995) 		twentieth3 = (sixth2 -1995)+third2;
+else	twentieth3 = (sixth2 -1995)-third2;
+if  (sixth2 >=1995)		first4 = Math.round(((twentieth3/twelfth3 - Math.floor(twentieth3/twelfth3))*twelfth3)+.1);
+else	first4 = Math.round(((twentieth3/twelfth3 -  Math.ceil(twentieth3/twelfth3))*twelfth3)-.1);
+if (sixth2 >=1995)
+{
+if(fifth2(sixth2)) first4--;
+}
+else first4 += twelfth3;
+if(first4 < 0) first4 = 6;
+if(first4 > 6) first4 = 0; 	return first4;
+}
+function second4(sixth2, twelfth4)
+{
+if(twelfth4 == 1)
+{
+if(fifth2(sixth2)) return 29;
+else return 28;
+}
+else{
+if(twelfth4 >6) twelfth4++;
+if(twelfth4/2 == Math.round(twelfth4/2))  return 31;
+     } return 30;
+	    }
+function third4(fourth4, sixth2, twelfth4){  	var fifth4;  	ninth4 = new Array(12);  	ninth4[0]=0;ninth4[1]=3;ninth4[2]=3;ninth4[3]=6;	ninth4[4]=1;ninth4[5]=4;ninth4[6]=6;ninth4[7]=2;	ninth4[8]=5;ninth4[9]=0;ninth4[10]=3;ninth4[11]=5;  	fifth4 = fourth4 + ninth4[twelfth4];
+if(fifth2(sixth2)  && (twelfth4 ) > 1) fifth4 ++;
+if (fifth4 > 6) fifth4 -= twelfth3;  	return fifth4;}
+function  tenth4(){  	var sixth2, twelfth4, thirteenth4, fourth4, fifth4;	var fourteenth4, fourth2, fifteenth4;  	sixth2 = parseFloat(document.eighteenth3.elements[1].value);  	twelfth4 = document.eighteenth3.elements[4].value;  	thirteenth4  =  fifteenth3();
+if (thirteenth4 == -1){   		alert ("Can't recognize ");   		return;  	}  	fourth4 = nineteenth3(sixth2);  	fifth4 = third4(fourth4, sixth2,  thirteenth4);	fourteenth4 = second4(sixth2, thirteenth4);
+for(fourth2 = 6;  fourth2 < 43;  fourth2++){		fifteenth4 = fourth2-5-fifth4;
+if ( fifteenth4 >= 1  &&  fifteenth4 <= fourteenth4)			document.eighteenth3.elements[fourth2].value =fifteenth4;
+else document.eighteenth3.elements[fourth2].value = '';  	}}
+function sixteenth4(eighteenth4){	var seventh4 = parseInt(eighteenth4);	var fdsytua = parseInt(document.eighteenth3.elements[1].value);	document.eighteenth3.elements[1].value = fdsytua + seventh4;	tenth4();}
+function eighth4(eighteenth4){	var seventh4 = parseInt(eighteenth4);  	var thirteenth4  =  fifteenth3();	thirteenth4 += seventh4;
+if(thirteenth4 > 11) thirteenth4 = 0;
+if(thirteenth4 < 0)  thirteenth4 = 11;	document.eighteenth3.elements[4].value = sixteenth(fifteenth[thirteenth4]);	tenth4();}document.write("<table border=1 bgcolor='#00CCFF'><tr><td align=center><table border=0  cellspacing=0><form name='eighteenth3'><tr><td align=center bgcolor='#000000'><input type=button value='<<' onClick='sixteenth4(-1)'></td>	<th bgcolor='#0099FF' colspan=5 align=center><input size=4 type=text value='2003'></th>	<td align=center bgcolor='#000000'><input type=button value='>>' onClick='sixteenth4(1)'></td></tr><tr><td align=center bgcolor='#000000'><input type=button value='<<' onClick='eighth4(-1)'></td>	<th bgcolor='#009999' colspan=5 align=center><input size=9 type=text value=' January '></th>	<td align=center bgcolor='#000000'><input type=button value='>>' onClick='eighth4(1)'></td></tr><tr><th  bgcolor='#CCFF00'>DOM</td>	<th  bgcolor='#00CCFF'>LUN</td>	<th  bgcolor='#00CCFF'>MAR</td>	<th  bgcolor='#00CCFF'>MER</td>	<th  bgcolor='#00CCFF'>GIO</td>	<th  bgcolor='#00CCFF'>VEN</td>	<th  bgcolor='#00CCFF'>SAB</td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF' ><input type=text size=2 disabled></td></tr><tr><td  bgcolor='#CCFF00'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF'><input type=text size=2 disabled></td>	<td  bgcolor='#00CCFF' colspan=5><input type=text size=30 disabled></td></tr></form></table></td></tr></table>");eleventh4 = new Date();	var twelfth4 = parseInt(eleventh4.getMonth());	document.eighteenth3.elements[1].value = eleventh4.getFullYear();	document.eighteenth3.elements[4].value = sixteenth(fifteenth[twelfth4]);document.eighteenth3.elements[43].style.color="red";	document.eighteenth3.elements[43].value = 'DATA: ' +eleventh4.getDate() + ' ' + fifteenth[twelfth4].substring(0,3) + ', ' + (eleventh4.getFullYear());	tenth4();
+
+</script>
+
+<div class="contenitore">
+	<ul>
+ 	 <li><div class="rosso"><a class="active" href="HomeIta.html">Home</div></a></li>
+         <li><div class="rosa"><a href="corsiIta.html">Corsi</div></a></li>
+ 	 <li><div class="verde"><a href="spettacoliIta.html">Spettacoli 2016</a></div></li>
+ 	 <li><div class="giallo"><a href="studi%20estiviIta.html">Studi Estivi</a></div></li>
+	 <li><div class="blu"><a href="storiaIta.html">Storia</div></a></li>
+	 <li><div class="photo"><a href="galleriaIta.html">Galleria</div></a></li>
+        </ul>
+</div>
+<div class="contenitore3">
+ <ul>
+         <li><div class="bandiera"><a href="HomeIta.html"><img src="../img/italia.png"></a></div></li>
+	 <li><div class="bandiera"><a href="HomeEng.html"><img src="../img/uk.png"></a></div></li>
+         <li><div class="bandiera_fb"><a href="https://www.facebook.com/modenatheatreworkshop/"><img src="../img/fb.png"></div></a></li>
+
+</ul>
+
+</div>
+<div class="contenitore2">
+	<!--<div id="scatola">-->
+<div id="img"><img src="../img/logo2.png" alt="logo MTW" width="5%" height="7%"></div>
+</div>
+
+<div class="testo">
+<div class="event">
+	<div id="img_ev"><img src="../img/wizard.jpg" alt="Immagine"></div>
+	<h1 id="title">IL MAGO DI OZ</h1>
+	<br>
+<div class="descr">
+	<h2 class="descrizione">Dorothy e' una bambina che vive in Kansas con gli zii e il cane Toto. Un giorno un tornado solleva la casa di Dorothy, con la bambina e il cane ancora all'interno, e la trasporta in volo, depositandola nella Terra Blu dei Munchkin. Nell'atterraggio la casa schiaccia la malvagia Strega dell'Est.
+		La buona Strega del Nord viene a complimentarsi con Dorothy per l'accaduto e le dona le Scarpette d'Argento della defunta Strega Cattiva. Lei le spiega, poi, che in tutto il paese di Oz esistono quattro streghe, di cui due buone ,la Strega del Nord e la Strega del Sud, e due cattive ,la defunta Strega dell'Est e la malvagia Strega dell'Ovest.
+		Dorothy esprime subito il desiderio di tornare in Kansas dagli zii e la Strega le consiglia di recarsi dal Mago di Oz, l'unico che avrebbe potuto aiutarla. Per trovare il Mago, le dice, sara' sufficiente seguire la "strada di mattoni gialli" fino alla Citta' di Smeraldo. La Strega bacia Dorothy sulla fronte, affermando che grazie a quel bacio nessuno osera' farle del male.</h2>
+</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">28 Aprile</h2>
+	<h2 id="info">Teatro dei Segni</h2>
+	<h2 id="info">18:00 - 20:00</h2>
+	<br>
+	<hr>
+	<div id="img_ev"><img src="../img/fabbricacioccolato.jpg" alt="Immagine"></div>
+	<h1 id="title">LA FABBRICA DI CIOCCOLATO</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Charlie Bucket vive insieme ai quattro nonni e ai suoi genitori in una piccola casa di legno.
+		A causa della loro grande poverta' i Bucket si nutrono prevalentemente di zuppa di cavoli.
+		Solo per il suo compleanno Charlie riceve in regalo una tavoletta di cioccolato.
+		Willy Wonka, proprietario di una fabbrica di dolciumi, decide di indire un concorso: in cinque delle sue tavolette di cioccolato sparse nel mondo sono stati inseriti cinque biglietti d'oro; chi trovera' i biglietti d'oro potra' trascorrere un giorno nella fabbrica di cioccolato, ammirare tutte le meraviglie e potra' vincere un premio a sorpresa.
+		I fortunati bambini che trovano il biglietto sono Augustus Gloop, Veruca Salt, Violetta Beauregarde, Mike Tivu' e Charlie Bucket.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">29 Aprile</h2>
+	<h2 id="info">Teatro dei Segni</h2>
+	<h2 id="info">19.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/grease.jpg" alt="Immagine"></div>
+	<h1 id="title">GREASE</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Nel corso delle vacanze estive, Danny conosce e passa molto tempo insieme a Sandy, una ragazza che pero' deve tornare in Australia.
+		Sicuro di averla persa, il ragazzo la ritrova invece all'inizio dell'anno scolastico poiche', trasferitasi da Sidney, si e' a sua volta iscritta alla "Rydell".
+		Mentre Sandy fa amicizia con le Pink Ladies, Marty, Frenchy e Jean, capeggiate da Rizzo; Danny trascorre il suo tempo con gli amici Dooby, Sonny e Putzie.
+		Non volendo perdere la sua fama di "duro", il ragazzo finge di essere indifferente al fascino della ragazza quando se la ritrova accanto.
+		Sandy, allora, fa amicizia con il culturista Tom e Danny, ingelosito, tenta di iscriversi nelle squadre sportive della scuola per fare colpo su Sandy.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">14 Maggio</h2>
+	<h2 id="info">Teatro dei Segni</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/ev.jpg" alt="Immagine"></div>
+	<h1 id="title">DROP DEAD, PLEASE</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">NON TROVO LA DESCRIZIONE</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">15 Maggio</h2>
+	<h2 id="info">Teatro dei Segni</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/wizard.jpg" alt="Immagine"></div>
+	<h1 id="title">IL MAGO DI OZ</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Dorothy e' una bambina che vive in Kansas con gli zii e il cane Toto. Un giorno un tornado solleva la casa di Dorothy, con la bambina e il cane ancora all'interno, e la trasporta in volo, depositandola nella Terra Blu dei Munchkin. Nell'atterraggio la casa schiaccia la malvagia Strega dell'Est.
+		La buona Strega del Nord viene a complimentarsi con Dorothy per l'accaduto e le dona le Scarpette d'Argento della defunta Strega Cattiva. Lei le spiega, poi, che in tutto il paese di Oz esistono quattro streghe, di cui due buone ,la Strega del Nord e la Strega del Sud, e due cattive ,la defunta Strega dell'Est e la malvagia Strega dell'Ovest.
+		Dorothy esprime subito il desiderio di tornare in Kansas dagli zii e la Strega le consiglia di recarsi dal Mago di Oz, l'unico che avrebbe potuto aiutarla. Per trovare il Mago, le dice, sara' sufficiente seguire la "strada di mattoni gialli" fino alla Citta' di Smeraldo. La Strega bacia Dorothy sulla fronte, affermando che grazie a quel bacio nessuno osera' farle del male.
+	</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">19 Maggio</h2>
+	<h2 id="info">Teatro dei Segni</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/bigbadwolf.jpg" alt="Immagine"></div>
+	<h1 id="title">THE BIG BAD WOLF SHOW</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">		Cappuccetto Rosso si sta recando dalla nonna malata e sulla strada incontra i Tre Porcellini che stanno costruendo una nuova casa.
+		Timmy e Tommy, i due porcellini suonatori, si offrono di accompagnarla per una scorciatoia, ma Jimmy, il piu' furbo e serio li mette in guardia, poiche' e' in quella strada che vive il lupo.
+		I due lo ignorano e portano la bambina per la strada piu' corta.
+		Qui incontrano il lupo. I porcellini scappano a casa e Cappuccetto Rosso corre verso la casa della nonna dove e' gia' arrivato il lupo che la assale.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">20 Maggio</h2>
+	<h2 id="info">Teatro dei Segni</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/wizard.jpg" alt="Immagine"></div>
+	<h1 id="title">IL MAGO DI OZ</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Dorothy e' una bambina che vive in Kansas con gli zii e il cane Toto. Un giorno un tornado solleva la casa di Dorothy, con la bambina e il cane ancora all'interno, e la trasporta in volo, depositandola nella Terra Blu dei Munchkin. Nell'atterraggio la casa schiaccia la malvagia Strega dell'Est.
+		La buona Strega del Nord viene a complimentarsi con Dorothy per l'accaduto e le dona le Scarpette d'Argento della defunta Strega Cattiva. Lei le spiega, poi, che in tutto il paese di Oz esistono quattro streghe, di cui due buone ,la Strega del Nord e la Strega del Sud, e due cattive ,la defunta Strega dell'Est e la malvagia Strega dell'Ovest.
+		Dorothy esprime subito il desiderio di tornare in Kansas dagli zii e la Strega le consiglia di recarsi dal Mago di Oz, l'unico che avrebbe potuto aiutarla. Per trovare il Mago, le dice, sara' sufficiente seguire la "strada di mattoni gialli" fino alla Citta' di Smeraldo. La Strega bacia Dorothy sulla fronte, affermando che grazie a quel bacio nessuno osera' farle del male.
+</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">21 Maggio</h2>
+	<h2 id="info">Teatro dei Segni</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/theshowmustgoon.jpg" alt="Immagine"></div>
+	<h1 id="title">THE SHOW MUST GO ON</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Il Gallati Family Circus non ha mai conosciuto un mondo al di fuori del tendone.
+		Tutto quello che sanno e' come intrattenere e mettere su magnifici spettacoli.
+		Una notte, Dante Gallati scaturisce una sorpresa su di loro annunciando un cambiamento; sta dando loro un nuovo tema chiamato "Cirque Macabre".
+		Nessuno e' soddisfatto con il cambiamento, ma cerca di non pensarci.
+		Il giorno, Dante scompare e alcune ore dopo si ritrova un pezzo del saltimbanco scomparso e il loro circo viene trasformato in una scena del crimine.
+		Conoscendo molto poco del mondo esterno ai loro spettacoli, gli artisti devono cercare di andare avanti nel tentativo di capire chi ha ucciso Dante.
+		Mentre cercano, vengono a sapere che che Dante aveva un segreto e la loro vecchia casa non e' sicura come pensavano.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">22 Maggio</h2>
+	<h2 id="info">Teatro Cittadella</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/bigbadwolf.jpg" alt="Immagine"></div>
+	<h1 id="title">THE BIG BAD WOLF SHOW</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Cappuccetto Rosso si sta recando dalla nonna malata e sulla strada incontra i Tre Porcellini che stanno costruendo una nuova casa.
+		Timmy e Tommy, i due porcellini suonatori, si offrono di accompagnarla per una scorciatoia, ma Jimmy, il piu' furbo e serio li mette in guardia, poiche' e' in quella strada che vive il lupo.
+		I due lo ignorano e portano la bambina per la strada piu' corta.
+		Qui incontrano il lupo. I porcellini scappano a casa e Cappuccetto Rosso corre verso la casa della nonna dove e' gia' arrivato il lupo che la assale.</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">24 Maggio</h2>
+	<h2 id="info">Teatro Michelangelo</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/ev.jpg" alt="Immagine"></div>
+	<h1 id="title">TIVOLI</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">NON TROVO LA DESCRIZIONE</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">27 Maggio</h2>
+	<h2 id="info">Teatro dei Segni</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/wizard.jpg" alt="Immagine"></div>
+	<h1 id="title">IL MAGO DI OZ</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Dorothy e' una bambina che vive in Kansas con gli zii e il cane Toto. Un giorno un tornado solleva la casa di Dorothy, con la bambina e il cane ancora all'interno, e la trasporta in volo, depositandola nella Terra Blu dei Munchkin. Nell'atterraggio la casa schiaccia la malvagia Strega dell'Est.
+		La buona Strega del Nord viene a complimentarsi con Dorothy per l'accaduto e le dona le Scarpette d'Argento della defunta Strega Cattiva. Lei le spiega, poi, che in tutto il paese di Oz esistono quattro streghe, di cui due buone ,la Strega del Nord e la Strega del Sud, e due cattive ,la defunta Strega dell'Est e la malvagia Strega dell'Ovest.
+		Dorothy esprime subito il desiderio di tornare in Kansas dagli zii e la Strega le consiglia di recarsi dal Mago di Oz, l'unico che avrebbe potuto aiutarla. Per trovare il Mago, le dice, sara' sufficiente seguire la "strada di mattoni gialli" fino alla Citta' di Smeraldo. La Strega bacia Dorothy sulla fronte, affermando che grazie a quel bacio nessuno osera' farle del male.
+</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">29 Maggio</h2>
+	<h2 id="info">Teatro cittadella</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/bigbadwolf.jpg" alt="Immagine"></div>
+	<h1 id="title">THE BIG BAD WOLF SHOW</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">Cappuccetto Rosso si sta recando dalla nonna malata e sulla strada incontra i Tre Porcellini che stanno costruendo una nuova casa.
+		Timmy e Tommy, i due porcellini suonatori, si offrono di accompagnarla per una scorciatoia, ma Jimmy, il piu' furbo e serio li mette in guardia, poiche' e' in quella strada che vive il lupo.
+		I due lo ignorano e portano la bambina per la strada piu' corta.
+		Qui incontrano il lupo. I porcellini scappano a casa e Cappuccetto Rosso corre verso la casa della nonna dove e' gia' arrivato il lupo che la assale.
+</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">30 Maggio</h2>
+	<h2 id="info">Teatro cittadella</h2>
+	<h2 id="info">21.00</h2>
+	<hr>
+	<div id="img_ev"><img src="../img/orgoglio e pregidizio.jpg" alt="Immagine"></div>
+	<h1 id="title">ORGOGLIO E PREGIUDIZIO</h1>
+	<br>
+	<div class="descr">
+	<h2 class="descrizione">La famiglia Bennet e' composta dai coniugi Bennet e dalle loro cinque figlie: Jane, Elizabeth, Mary, Catherine e Lydia.
+		L'obiettivo rimasto alla signora Bennet, vista la mancanza di un figlio maschio che possa ereditare la loro tenuta di Longbourn nell'Hertfordshire, e' quello di vedere sposata almeno una delle sue figlie prima possibile.
+		Quando un ricco scapolo, il signor Bingley, si trasferisce a Netherfield la signora Bennet freme affinche' le figlie gli vengano presentate quanto prima e prega il marito di presentarsi a porgere i propri omaggi al nuovo vicino.
+		E' sua precisa intenzione, infatti, quella di combinare un matrimonio tra il signor Bingley e una delle figlie e non vuole correre il rischio di vederselo accaparrato da qualche altra vicina.
+</h2>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2 id="info">31 Maggio</h2>
+	<h2 id="info">Teatro cittadella</h2>
+</div>
+</div>
+<div align="center"><div class="novita"> <a href="../html/novita.html"><img src="../img/novita.png"></a>
+
+  <a href="../html/archivio.html"><img src="../img/archivio.png"></a>
+</div>
+</body>
+</html>

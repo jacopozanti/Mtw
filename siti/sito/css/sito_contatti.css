@@ -1,0 +1,72 @@
+
+img
+{
+    width: 255px;
+    height: 145px;
+}
+.contenitore3
+{
+position:absolute;
+border: 0% solid;
+margin:0;
+float: left;
+background-color:white;
+width:auto;
+height:5%;
+top:0%;
+right:0%;
+margin: 2%;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li
+{
+    float:left;
+}
+
+
+li .bandiera
+{
+   align: center;
+   margin-top: 15%;
+   margin-left: 2%;
+}
+li .bandiera img , li .bandiera_fb img
+{
+   margin-right: 8px;
+   margin-left: 5px;
+   width: 60px;
+   height: 40px;
+
+}
+li .bandiera_fb img
+{
+  position: absolute;
+  left:-50%;
+  width: auto;
+  height: 40px;
+  margin-top: -3%;
+  margin-right: 15%;
+}
+
+
+.contenitore3 ul
+{
+  height: 100%;
+  width: auto;
+
+}
